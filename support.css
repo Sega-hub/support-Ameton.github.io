@@ -1,0 +1,405 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("./public/fonts/MuseoSansCyrl500.eot");
+  src: url("./public/fonts/MuseoSansCyrl500.eot?#iefix") format("embedded-opentype"), url("./public/fonts/MuseoSansCyrl500.woff") format("woff"), url("./public/fonts/MuseoSansCyrl500.ttf") format("truetype");
+}
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1920px;
+}
+.container .main {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .contacts {
+  margin-top: 40px;
+  padding-bottom: 54px;
+  width: 93.75%;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  background-image: url(./public/img/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .main .contacts .contact__content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .contacts .contact__content .contact__title {
+  font-family: "Museo Sans Cyrl";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .contacts .contact__content .contact__discription {
+  font-family: " Museo Sans Cyrl";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23.8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.container .main .contacts .contact__content .contact__buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+}
+.container .main .contacts .contact__content .contact__buttons .contact__box {
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+.container .main .contacts .contact__content .contact__buttons .contact__box p {
+  margin-left: 8px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(26, 26, 26);
+}
+.container .main .contacts .contact__content .contact__buttons .contact__box:first-child {
+  margin-left: 0;
+}
+.container .main .social {
+  margin-top: 82px;
+  width: 77.8%;
+  height: 166px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);
+}
+.container .main .social .social__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.container .main .social .social__text .social__name {
+  margin-top: 42px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.container .main .social .social__text .social__title {
+  margin-top: 16px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.container .main .social .social__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.container .main .social .social__links .social__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  width: 56px;
+  height: 56px;
+  border-radius: 13.33px;
+  background-color: rgb(249, 249, 249);
+}
+.container .main .social .social__links .social__box:first-child {
+  margin-left: 0;
+}
+.container .main .questions {
+  padding: 80px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .main .questions .questions__title {
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.container .main .questions .questions__slider {
+  margin-top: 32px;
+  width: 93.75%;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  overflow: hidden;
+  max-width: 1280px;
+}
+.container .main .questions .questions__slider .questions__slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide {
+  min-width: 282px;
+  height: 160px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  margin-left: 24px;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide:first-child {
+  margin-left: 0;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__img {
+  display: flex;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__img div .questions__slide__title {
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+  margin: 16px 0 0 16px;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__img div .questions__slide__discription {
+  font-family: "Museo Sans Cyrl";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgb(148, 148, 148);
+  margin: 8px 0 0 16px;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__empty {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__empty .questions__slide__title {
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+  margin: 16px 0 0 16px;
+}
+.container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__empty .questions__slide__discription {
+  font-family: "Museo Sans Cyrl";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgb(148, 148, 148);
+  margin: 8px 0 0 16px;
+}
+.container .main .questions .questions__slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+}
+.container .main .questions .questions__slider button.questions__next {
+  left: 95%;
+}
+.container .main .questions .questions__slider button.questions__prev {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .questions .questions__slider button.questions__prev img {
+  transform: rotate(180deg);
+}
+.container .main .reference {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.container .main .reference .reference__title {
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.container .main .reference .reference__links {
+  margin-top: 32px;
+  width: 77.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .main .reference .reference__links .reference__box {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px 20px 24px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.container .main .reference .reference__links .reference__box .reference__text {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .reference .reference__links .reference__box .reference__text .reference__name {
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgb(26, 26, 26);
+}
+.container .main .reference .reference__links .reference__box .reference__text .reference__discription {
+  margin-top: 4px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: rgb(148, 148, 148);
+}
+.container .main .reference .reference__links .reference__box .reference__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main .reference .reference__links .reference__box .reference__arrow img {
+  width: 6.59px;
+  height: 11.17px;
+}
+.container .main .reference .reference__links .reference__box:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 1150px) {
+  .container .main .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  .container .main .social .social__text {
+    margin: 0;
+  }
+  .container .main .social .social__links {
+    margin: 0;
+    height: auto;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 800px) {
+  .container .main .contacts .contact__content .contact__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .main .contacts .contact__content .contact__buttons .contact__box {
+    margin: 8px;
+  }
+  .container .main .social .social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container .main .social .social__links .social__box {
+    margin: 8px;
+  }
+  .container .main .questions .questions__slider .questions__slides {
+    overflow-x: scroll;
+  }
+  .container .main .questions .questions__slider button {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .container .main .contacts {
+    border-radius: 60px;
+  }
+  .container .main .contacts .contact__content .contact__title {
+    font-size: 30px;
+  }
+  .container .main .contacts .contact__content .contact__discription {
+    font-size: 17px;
+  }
+  .container .main .contacts .contact__content .contact__buttons .contact__box p {
+    font-size: 13px;
+  }
+  .container .main .social .social__text .social__name {
+    font-size: 13px;
+  }
+  .container .main .social .social__text .social__title {
+    font-size: 25px;
+  }
+  .container .main .questions .questions__title {
+    text-align: center;
+    line-height: normal;
+    font-size: 25px;
+  }
+  .container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__img div .questions__slide__title {
+    font-size: 20px;
+  }
+  .container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__img div .questions__slide__discription {
+    font-size: 13px;
+  }
+  .container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__empty .questions__slide__title {
+    font-size: 20px;
+  }
+  .container .main .questions .questions__slider .questions__slides .questions__slide.questions__slide__theme__empty .questions__slide__discription {
+    font-size: 13px;
+  }
+  .container .main .reference .reference__title {
+    font-size: 25px;
+  }
+  .container .main .reference .reference__links .reference__box .reference__text .reference__name {
+    font-size: 20px;
+  }
+  .container .main .reference .reference__links .reference__box .reference__text .reference__discription {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=support.css.map */

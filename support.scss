@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@font-face { 
+    font-family: "Museo Sans Cyrl";
+    src: url("../../../public/fonts/MuseoSansCyrl500.eot");
+    src: url("../../../public/fonts/MuseoSansCyrl500.eot?#iefix")format("embedded-opentype"),
+    url("../../../public/fonts/MuseoSansCyrl500.woff") format("woff"),
+    url("../../../public/fonts/MuseoSansCyrl500.ttf") format("truetype");
+}
+
+//Переменные
+    //fonts size
+$FONT_TITLE: 60px;
+$FONT_SUBTITLE: 40px;
+$FONT__NAMES: 20px;
+$FONT_CONTACT: 17px;
+$FONT_USUAL: 15px;
+$FONT_REFERENCE: 13px;
+    //colors
+$COLOR_BLUE: rgba(147, 187, 234, 1);
+$COLOR_BLACK: rgba(26, 26, 26, 1);
+$COLOR_GRAY: rgba(148, 148, 148, 1);
+$COLOR_WHITE: rgba(255, 255, 255, 1);   
+$COLOR_LIGHTGRAY: rgba(249, 249, 249, 1);
+
+
+.container{
+    display: block;
+    margin: auto;
+    max-width: 1920px;
+    .main{
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contacts{
+            margin-top: 40px;
+            padding-bottom: 54px;
+            width: 93.75%;
+            display: flex;
+            justify-content: center;
+            border-radius: 40px;          
+            
+            background-image: url(../../../public/img/back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            
+            .contact__content{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .contact__title{                      
+                    font-family:  "Museo Sans Cyrl";
+                    font-size: $FONT_TITLE;
+                    font-weight: 700;
+                    line-height: 72px;
+                    text-align: center;
+                    color: $COLOR_WHITE;
+                }
+                .contact__discription{                            
+                    font-family:" Museo Sans Cyrl";
+                    font-size: $FONT_CONTACT;
+                    font-weight: 400;
+                    line-height: 23.8px;
+                    text-align: center;
+                    color: $COLOR_WHITE;
+                }
+                .contact__buttons{
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: start;
+                    .contact__box{
+                        margin-left: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 160px;
+                        height: 48px;                        
+                        border-radius: 12px;
+                        background-color: $COLOR_WHITE;
+
+                        p{
+                            margin-left: 8px;
+                            font-family: "Museo Sans Cyrl";
+                            font-size: $FONT_USUAL;
+                            font-weight: 600;
+                            line-height: 18px;
+                            text-align: center;
+                            color: $COLOR_BLACK;
+                        }
+
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        
+                    }
+                   
+                }
+            }
+           
+        }
+        .social{
+            margin-top: 82px;
+            width: 77.8%;
+            height: 166px;
+            display: flex;
+            justify-content: space-between;          
+            border-radius: 40px;
+            background-color: $COLOR_WHITE;
+            box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);            
+            .social__text{
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                .social__name{
+                    margin-top: 42px;
+                    font-family: "Museo Sans Cyrl";
+                    font-size: $FONT_USUAL;
+                    font-weight: 600;
+                    line-height: 18px;
+                    text-align: left;
+                    color: $COLOR_BLACK;
+                }
+                .social__title{
+                    margin-top: 16px;
+                    font-family: "Museo Sans Cyrl";
+                    font-size: $FONT_SUBTITLE;
+                    font-weight: 600;
+                    line-height: 18px;
+                    text-align: left;
+                    color: $COLOR_BLACK;
+                }
+            }
+            .social__links{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 40px;
+                .social__box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 14px;
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 13.33px;
+                    background-color: $COLOR_LIGHTGRAY;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .questions{
+            padding: 80px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .questions__title{
+                font-family: "Museo Sans Cyrl";
+                font-size: $FONT_SUBTITLE;
+                font-weight: 600;
+                line-height: 48px;
+                text-align: left;
+                color: $COLOR_BLACK;
+            }
+            .questions__slider{
+                margin-top: 32px;
+                width: 93.75%;
+                display: flex;
+                justify-content: start;
+                position: relative;
+                overflow: hidden;                
+                max-width:1280px;
+                .questions__slides{
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                    .questions__slide{ 
+                        min-width: 282px;
+                        height: 160px;
+                        border-radius: 16px;
+                        background-color: $COLOR_WHITE;
+                        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);   
+                        margin-left: 24px;
+                        
+                        &:first-child{
+                            margin-left: 0;
+                        }
+    
+                        &.questions__slide__theme__img{
+                            display: flex;
+                            div{
+                                .questions__slide__title{
+                                    font-family: "Museo Sans Cyrl";
+                                    font-size: $FONT__NAMES;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    color: $COLOR_BLACK;
+                                    margin: 16px 0 0 16px;
+                                }
+                                .questions__slide__discription{
+                                    font-family: "Museo Sans Cyrl";
+                                    font-size: $FONT_USUAL;
+                                    font-weight: 400;
+                                    line-height: 21px;
+                                    text-align: left;
+                                    color: $COLOR_GRAY;
+                                    margin: 8px 0 0 16px;
+                                }
+                            }
+                        }
+    
+                        &.questions__slide__theme__empty{
+                            display: flex;
+                            flex-direction: column;
+                            .questions__slide__title{
+                                font-family: "Museo Sans Cyrl";
+                                font-size: $FONT__NAMES;
+                                font-weight: 600;
+                                line-height: 24px;
+                                text-align: left;
+                                color: $COLOR_BLACK;
+                                margin: 16px 0 0 16px;
+                            }
+                            .questions__slide__discription{
+                                font-family: "Museo Sans Cyrl";
+                                font-size: $FONT_USUAL;
+                                font-weight: 400;
+                                line-height: 21px;
+                                text-align: left;
+                                color: $COLOR_GRAY;
+                                margin: 8px 0 0 16px;
+                            }
+                        }
+                    }                   
+                }
+                button{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);                   
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+
+                    width: 44px;
+                    height: 44px;
+                    background-color: $COLOR_WHITE;
+                    border-radius: 50%;
+                    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);      
+                    &.questions__next{
+                        left: 95%;
+                    }    
+                    &.questions__prev{
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            transform: rotate(180deg);
+                        }
+                    }            
+                }
+            }
+           
+        }
+        .reference{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 80px;
+            .reference__title{
+                font-family: "Museo Sans Cyrl";
+                font-size: $FONT_SUBTITLE;
+                font-weight: 600;
+                line-height: 48px;
+                text-align: left;
+                color: $COLOR_BLACK;
+            }
+            .reference__links{
+                margin-top: 32px;
+                width: 77.8%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .reference__box{
+                    margin-top: 12px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;                    
+                    padding: 20px 16px 20px 24px;
+                    border-radius: 16px;
+                    background-color: $COLOR_WHITE;
+                    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);  
+                    .reference__text{
+                        display: flex;
+                        flex-direction: column;
+                        .reference__name{                               
+                            font-family: "Museo Sans Cyrl";
+                            font-size: $FONT__NAMES;
+                            font-weight: 600;
+                            line-height: 24px;
+                            text-align: left;  
+                            color: $COLOR_BLACK;                       
+                        }
+                        .reference__discription{
+                            margin-top: 4px;
+                            font-family: "Museo Sans Cyrl";
+                            font-size: $FONT_REFERENCE;
+                            font-weight: 400;
+                            line-height: 18.2px;
+                            text-align: left;
+                            color: $COLOR_GRAY;
+                        }
+                    }           
+                    .reference__arrow{
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       img{
+                        width: 6.59px;
+                        height: 11.17px; 
+                       }                   
+                    }       
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px){
+    .container{
+        .main{
+            .social{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 0;
+                .social__text{
+                    margin: 0;
+                }
+                .social__links{
+                    margin: 0;
+                    height: auto;
+                    padding: 40px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        .main{
+           .contacts{
+                .contact__content {
+                    .contact__buttons{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        .contact__box{
+                            margin: 8px;
+                        }
+                    }
+                }
+               
+           }
+           .social{
+                .social__links{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .social__box{
+                        margin: 8px;
+                    }
+                }
+           }
+           .questions{
+                .questions__slider{
+                    .questions__slides{
+                        overflow-x: scroll ;
+                    }
+                    button{
+                        display: none;
+                    }
+                }
+           }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    $FONT_TITLE: 30px;
+    $FONT_SUBTITLE: 25px;
+    $FONT__NAMES: 20px;
+    $FONT_CONTACT: 17px;
+    $FONT_USUAL: 13px;
+    $FONT_REFERENCE: 13px;
+
+    .container{        
+        .main{           
+            .contacts{    
+                border-radius: 60px;            
+                .contact__content{                  
+                    .contact__title{                      
+                        font-size: $FONT_TITLE;
+                    }
+                    .contact__discription{                            
+                        font-size: $FONT_CONTACT;
+                    }
+                    .contact__buttons{                        
+                        .contact__box{                          
+                            p{
+                                font-size: $FONT_USUAL;
+                            }
+                        }                       
+                    }
+                }
+               
+            }
+            .social{                         
+                .social__text{                    
+                    .social__name{
+                        font-size: $FONT_USUAL;
+                    }
+                    .social__title{
+                        font-size: $FONT_SUBTITLE;
+                    }
+                }               
+            }
+            .questions{               
+                .questions__title{
+                    text-align: center;
+                    line-height: normal;
+                    font-size: $FONT_SUBTITLE;
+                }
+                .questions__slider{                    
+                    .questions__slides{                        
+                        .questions__slide{                       
+                            &.questions__slide__theme__img{                                
+                                div{
+                                    .questions__slide__title{
+                                        font-size: $FONT__NAMES;
+                                    }
+                                    .questions__slide__discription{
+                                        font-size: $FONT_USUAL;
+                                    }
+                                }
+                            }
+        
+                            &.questions__slide__theme__empty{                                
+                                .questions__slide__title{
+                                    font-size: $FONT__NAMES;
+                                }
+                                .questions__slide__discription{
+                                    font-size: $FONT_USUAL;
+                                }
+                            }                         
+                        }                   
+                    }                  
+                }
+               
+            }
+            .reference{                
+                .reference__title{
+                    font-size: $FONT_SUBTITLE;
+                }
+                .reference__links{                  
+                    .reference__box{                      
+                        .reference__text{                           
+                            .reference__name{                               
+                                font-size: $FONT__NAMES;                     
+                            }
+                            .reference__discription{
+                                font-size: $FONT_REFERENCE;
+                            }
+                        }           
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
